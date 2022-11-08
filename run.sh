@@ -11,10 +11,12 @@ echo "Loading modules"
 module load 2019
 module load 2020
 module load 2021
-#module load eb/4.5.3
-module load Python/3.9.5-GCCcore-10.3.0
-module load CUDA/10.0.130
-module load cuDNN/7.3.1-CUDA-10.0.130
+#module load Python/3.9.5-GCCcore-10.3.0
+module load Python/3.8.2-GCCcore-9.3.0
+#module load CUDA/10.0.130
+module load CUDA/11.7.0
+#module load cuDNN/7.3.1-CUDA-10.0.130
+module load cuDNN/8.4.1.50-CUDA-11.7.0
 
 # Load environment
 source ${HOME}/transform/transformer-env/bin/activate
