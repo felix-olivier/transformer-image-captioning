@@ -152,7 +152,7 @@ trainer:
     - ^roberta
   num_epochs: 100
   shuffle: true
-  cuda_device: -1 # TODO set to 0
+  cuda_device: 0 #-1 # TODO set to 0
   callbacks:
     - type: checkpoint
       checkpointer:

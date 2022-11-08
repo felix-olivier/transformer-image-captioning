@@ -11,13 +11,13 @@ echo "Loading modules"
 module load 2019
 module load 2020
 module load 2021
-module load eb/4.5.3
+#module load eb/4.5.3
 module load Python/3.9.5-GCCcore-10.3.0
 module load CUDA/10.0.130
 module load cuDNN/7.3.1-CUDA-10.0.130
 
 # Load environment
-source ${HOME}/transformer/transformer-env/bin/activate
+source ${HOME}/transform/transformer-env/bin/activate
 
 # Copy input data to scratch space
 #echo "Copying data"
@@ -31,9 +31,9 @@ mkdir -p ${OUTPUT_DIR}
 # Run the Python script
 echo "Starting Python Script"
 
-cd ${HOME}/transformer/transformer-image-captioning
+cd ${HOME}/transform/transformer-image-captioning
 
 python -m src.tell.commands.main
 # Retrieve output
 echo "Retrieving output"
-cp -r ${TMPDIR}/output_felix_tr ${HOME}/transfomer/logs/output-${SLURM-JOBID}
+cp -r ${TMPDIR}/output_felix_tr ${HOME}/transform/logs/output-${SLURM-JOBID}

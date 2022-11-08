@@ -63,8 +63,8 @@ from .train import train_model_from_file
 def main():
     args = {
         'train': True,
-        'param_path': '/src/tell/commands/config.yaml',
-        'expt_dir': '/src/tell/commands/expt/test'
+        'param_path': 'src/tell/commands/config.yaml',
+        'expt_dir': 'src/tell/commands/expt/test'
     }
 
     if args['train']:

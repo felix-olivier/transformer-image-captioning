@@ -2,3 +2,4 @@
 /data/
 /src/tell/yolov3/data/yolov3-spp-ultralytics.pt
 **/__pycache__/*
+__pycache__/

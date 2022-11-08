@@ -277,7 +277,7 @@ def main():
     args = {
         'device': 'cpu',
         'img_size': 416, # [480_sample_annotated, 270],
-        'output': '/data/images/480_sample_annotated',
+        'output': 'data/images/480_sample_annotated',
 
         'names': 'src/tell/yolov3/data/coco.names',
         'classes': '?',
@@ -285,10 +285,10 @@ def main():
         'iou_thres': 0.6,
         'agnostic_nms': '?',
         # 'source': '/data/images/480_sample',
-        'source': '/data/images/480_sample_preprocessed',
-        'weights': '/src/tell/yolov3/data/yolov3-spp-ultralytics.pt',
+        'source': 'data/images/480_sample_preprocessed',
+        'weights': 'src/tell/yolov3/data/yolov3-spp-ultralytics.pt',
 
-        'cfg': '/src/tell/yolov3/cfg/yolov3-spp.cfg'
+        'cfg': 'src/tell/yolov3/cfg/yolov3-spp.cfg'
 
     }
 
