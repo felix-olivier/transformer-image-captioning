@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+
+  main:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/src
+      - ./data:/data
+      - ./expt:/expt
+    command: python -m src.tell.commands.main
+#    command: /src/bin/tell train
+
+
+#    command: python -m src.encoder.annotate_yolov3
+#    command: tail -F /src/__init__.py # keep the container running

@@ -1,0 +1,4 @@
+/src/tell/commands/expt/
+/data/
+/src/tell/yolov3/data/yolov3-spp-ultralytics.pt
+**/__pycache__/*
